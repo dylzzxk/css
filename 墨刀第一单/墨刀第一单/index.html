@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 100%;
+			}
+			.head{
+				height: 80px;
+				width: 100%;
+			}
+			.to{
+				            margin-top: 5px;
+							display: block;
+							width: auto;
+							float: left;
+							padding: 20px;
+							/* height: 80px; */
+							margin-left:10px ;
+							font-size: 15px;
+							background-color: white;
+							font: bold;
+							text-decoration: none;
+							text-align: center;
+		}
+		.to:hover{
+			color:rgb(255,21,61) ;
+			cursor: pointer;
+		}
+		#login{
+			width: 60px;
+			padding: 5px;
+			border-radius: 20px;
+			border: 1px solid gray;
+			background-color: white;
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		#login:hover{
+			border:1px solid rgb(255,21,61) ;
+			cursor: pointer;
+			color:rgb(255,21,61) ;
+		}
+		#register{
+			width: 100px;
+			padding: 5px;
+			border-radius: 20px;
+			border: none;
+			color: white;
+			background-color: rgb(255,21,61);
+			margin-top: 20px;
+		}
+		.main{
+			position: relative;
+		}
+		.maintwo{
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			top: 750px;
+		}
+		#use{
+			color: white;
+			margin-top: 20px;
+			padding: 10px;
+			width: 180px;
+			font-size:15px;
+			border-radius: 20px;
+			border: none;
+			background-image: linear-gradient(to right,rgb(221,87,78),rgb(225,102,70));
+		}
+		.three{
+			width: 100%;
+			height: auto;
+			padding: 0;
+			margin: 0;
+		}
+		.item{
+			margin: 0 auto;
+			/*margin-top:100px;*/
+			width: 90%;
+			height: 500px;
+			/*margin-top: 10px;*/
+			margin-bottom: 10px;
+		}
+		.item2{
+			margin: 0 auto;
+			/*margin-top:100px;*/
+			padding-top: 100px;
+			width: 100%;
+			height: 500px;
+			/*margin-top: 10px;*/
+			
+			background-color:rgb(247,247,247);
+		}
+		.text{
+			width: 30%;
+			padding-left: 100px;
+			padding-top: 100px;
+			/* text-align: center; */
+			height: auto;
+			float: left;
+		}
+		.video{
+			width: 50%;
+			padding-left: 100px;
+			float: left;
+		}
+		.content{
+			margin-top: 20px;
+			color: rgb(219,81,81);
+		}
+		span{
+			color:dimgray;
+			line-height: 30px;
+		}
+		p{
+			margin-top: 10px;
+
+			color: rgb(127,127,127);
+		}
+		.slider{
+			width: 100%;
+			margin-bottom: 50px;
+			height: auto;
+		}
+
+		.bottom1{
+			width: 100%;
+			height: 600px;
+			padding-bottom: 100px;
+
+		}
+
+		.bottomitem1{
+			width: 20%;
+			float: left;
+			border-radius:50px;
+			border: 2px solid white;
+			padding: 20px;
+			height: 120px;
+			margin-right: 5px;
+
+		}
+
+		.bottomitem2{
+			width: 40%;
+			float: left;
+			border-radius:50px;
+			border: 2px solid white;
+			padding: 20px;
+			height: 120px;
+			margin-left:35px;
+			margin-right: 35px;
+
+		}
+
+		.bottomitem3{
+			width: 20%;
+			float: left;
+			border-radius: 50px;
+			border: 2px solid white;
+			padding: 20px;
+			overflow: hidden;
+			height: 120px;
+		}
+		.bottomitem1,.bottomitem2,.bottomitem3{
+			color: black;
+  			 box-shadow:20px 20px 20px rgb(240,242,248);
+		}
+		.img{
+			height: 100%;
+			width: 120px;
+			float: left;
+			margin-right: 10px;
+			padding-top: 30px;
+		}
+
+		.bottomlast{
+			background-color: black;
+			width: 100%;
+			color: white;
+			height: 500px;
+			padding: 100px;
+			
+		}
+
+
+		.last{
+			width: 10%;
+			float: left;
+			height: 500px;
+		}
+		.lastspan:hover{
+			color: white;
+			cursor: pointer;
+
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<img src="img/wonder-1.png" style="width: auto;float: left;"/>
+			<a class="to">产品</a>
+			<a class="to">解决方案</a>
+			<a class="to">私有部署</a>
+			<a class="to">定价</a>
+			<a class="to">素材广场</a>
+			<a class="to">下载</a>
+			<a class="to">资源与支持</a>
+			<button id="login">登录</button>
+			<button id="register">免费注册</button>
+		</div>
+		<div class="main">
+			
+			<video src="img/homeFirstCircle.mp4" width="100%" autoplay="autoplay" loop="loop"></video>
+		</div>
+		<div class="maintwo">
+			<p>
+				原型、设计、流程图、思维导图......享受创造的乐趣，成就团队和个人
+			</p>
+			<button id="use">立即使用</button>
+		</div>
+		<div class="three">
+			<img src="img/three.png" style="width: 100%;" />
+		</div>
+
+		<div class="item">
+			<div class="text">
+				<h1>原型</h1>
+				<P>产品设计，何止是快</P>
+				<ul class="content">
+					<li>
+						<span>
+							简单的拖拽，即可快速完成产品设计，将更多的时间留给思考
+						</span>
+					</li>
+					<li>
+						<span>
+							尺寸灵活，创作不受限，适配各类移动产品、网页设计、后台管理、小程序、活动原型....
+						</span>
+					</li>
+					<li>
+						<span>
+							支持制作高、低保真原型，不论是工作交流，还是客户展示，都能完美满足团队需求
+						</span>
+						
+					</li>
+				</ul>
+
+				
+			</div>
+
+
+			<div class="video">
+				<video src="img/modalVideo.mp4" width="100%" autoplay="autoplay" loop="loop"> </video>
+			</div>
+
+		</div>
+
+
+		<div class="item">
+			
+			<div class="video">
+				<video src="img/designVideo.mp4" width="100%" autoplay="autoplay" loop="loop"> </video>
+			</div>
+
+			<div class="text">
+				<h1>设计</h1>
+				<P>可在线协作的「Sketch」，轻松上手不畏创作</P>
+				<ul class="content">
+					<li>
+						<span>
+							便捷的操作体验快速完成设计想象，功能相当强大，让你轻松应对需求
+						</span>
+					</li>
+					<li>
+						<span>
+							全中文支持，还能与其他工具无缝对接，串联起工作的每个场景
+						</span>
+					</li>
+					<li>
+						<span>
+							贴心的标注信息，便捷的切图下载，产品开发直接快人一步
+						</span>
+						
+					</li>
+				</ul>
+
+				
+			</div>
+
+
+		</div>
+
+		<div class="item">
+
+			<div class="text">
+				<h1>流程图</h1>
+				<P>用简易的方式完成复杂的工作</P>
+				<ul class="content">
+					<li>
+						<span>
+							出色地衔接起工作的基本要素，整理优化团队项目结构
+						</span>
+					</li>
+					<li>
+						<span>
+							可快速梳理工作中的关键节点和步骤，让方案不留纰漏
+						</span>
+					</li>
+					<li>
+						<span>
+							图形让信息罗列更清晰，一目了然，避免工作沟通有歧义
+						</span>
+						
+					</li>
+				</ul>
+				
+			</div>
+			
+			<div class="video">
+				<video src="img/flowChatVideo.mp4" width="100%" autoplay="autoplay" loop="loop"> </video>
+			</div>
+		</div>
+
+
+			<div class="item">
+				<div class="video">
+			    	<video src="img/mindMapVideo.mp4" width="100%" autoplay="autoplay" loop="loop"> </video>
+			   </div>
+				<div class="text">
+					<h1>思维导图</h1>
+					<P>天生的思维管家</P>
+					<ul class="content">
+						<li>
+							<span>
+								迅速整理团队工作文档，归纳脑暴创意，构建共享知识库
+								
+							</span>
+						</li>
+						<li>
+							<span>
+								在保证简洁清晰的前提下，提供多种模板美观又好用
+							</span>
+						</li>
+						<li>
+							<span>
+								一键链接原型、设计、流程图，随时将想法植入其他工具中（即将上线）
+							</span>
+							
+						</li>
+					</ul>
+				</div>
+
+		</div>
+
+
+		<div class="slider">
+			<img src="img/slider.png" style="width:100%">
+
+		</div>
+
+
+
+		<div class="item">
+			<div class="text">
+					<h1>轻松上手 快速设计</h1>
+					<P>简洁易懂的界面，丰富的素材，人人可上手，助力快速完成产品设计</P>
+				</div>
+				<div class="video">
+			    	<img src="img/section5_1.png" width="100%">
+			   </div>
+				
+
+		</div>
+
+		<div class="item">
+				<div class="video">
+			    	<img src="img/section5_2.png" width="100%">
+			   </div>
+				<div class="text">
+					<h1>便捷协作 一键交付</h1>
+					<P>成员一键拉入项目，云端编辑、实时协作、分享交付，及时完成工作与沟通，加快工作进度，摆脱无效沟通
+					让人、事、物在企业中流畅运作</P>
+				</div>
+				
+		</div>
+
+		<div class="item">
+				
+				<div class="text">
+					<h1>设计规范，轻松管理</h1>
+					<P>整合设计素材资料，形成素材设计框架，促进标准化，形成产品设计规范，壮大企业知识库，利于企业资产的积累与传承</P>
+				</div>
+				<div class="video">
+			    	<img src="img/section5_3.png" width="100%">
+			   </div>
+		</div>
+
+
+		<div class="item2">
+				<div class="video">
+			    	<img src="img/section6_1.png" width="80%">
+			   </div>
+				<div class="text">
+					<h1>随时随地
+					让创作发生</h1>
+					<P>不受场地限制，不管在家还是在公司，或者咖啡店、车站，只要有网，就能开启创作</P>
+					<P>
+						不受设备系统限制，不管macOS还是Windows，或者PC、Pad，都可以
+					</P>
+				</div>
+
+		</div>
+
+		<div class="item2">
+				
+				<div class="text">
+					<h1>金融级安全服务</h1>
+					<P>128位 SSL 协议为数据传输加密，AWS 及多级容灾备份，保障数据安全、服务可用性，不再担心数据丢失
+					我们还支持私有化部署，专属服务器、数据加密，更安全；独享云资源，速度快又稳
+					</P>
+				</div>
+				<div class="video">
+			    	<img src="img/section6_2.png" width="80%">
+			   </div>
+		</div>
+
+
+		<div class="bottom1">
+			<div style="width: 80%;margin: 0 auto;padding-top: 100px;">
+				<img src="img/section7.png" width="100%">
+			</div> 
+
+
+			<div class="bottomitem1">
+				<span>
+					墨刀高度理解与契合国内互联网公司产品经理的工作方式，特别是企业版对团队成员的权限管理方式及组件库的设计，使内部工作的易用性与协同效率有显著提升。”
+				</span>
+			</div>
+
+			<div style="float: left;height: 120px;">
+
+            <img src="img/left.png" style="padding-top: 30px;">
+			
+			</div>
+			<div class="bottomitem2">
+				<div class="img">
+                 <img src="img/ptstudio.png" style="width:120px;height: 30px">
+				</div>
+
+				
+				<span>
+				“近年市面上的prototyping工具百花齐放，也都各有强项，却找不到像墨刀这么快速方便、功能全面、又适合协作讨论的好东西。墨刀的团队很在意使用者的经验感受并不断持续改进，推荐大家使用。”					
+				</span>
+			</div>
+			<div style="float: left;height: 120px;">
+
+            <img src="img/right.png" style="padding-top: 40px;">
+			
+			</div>
+
+
+			<div class="bottomitem3">
+				<div class="img">
+					<img src="img/we.png" style="width:120px;height:100px">
+				</div>
+				
+				<span>
+					“墨刀在新项目规划和演示，页面流程梳理方面相比其他工具优势明显；团队协作功能更是让大家实时同步产品规划的进度，表达意见，大大提高了沟通效率，非常推荐大家来使用墨刀
+				</span>
+
+			</div>
+			
+
+		</div>
+
+
+
+		<div>
+			<img src="img/bottom3.png" width="100%">
+		</div>
+
+
+
+		<div class="bottomlast">
+
+
+			<div class="last">
+				<h2>产品</h2>
+				<br/>
+				<br/>
+				<span class="lastspan">原型</span><br/>
+				<span class="lastspan">设计(Beta)</span><br/>
+				<span class="lastspan">流程图(Beta)</span><br/>
+				<span class="lastspan">思维导图(Beta)</span><br/>
+				<span class="lastspan">最新更新</span><br/>
+				<span class="lastspan">下载</span><br/>
+			</div>
+			<div class="last">
+				<h2>资源</h2>
+				<br/>
+				<br/>
+				<span class="lastspan">教育支持</span><br/>
+				<span class="lastspan">帮助中心</span><br/>
+				<span class="lastspan">福利中心</span><br/>
+				<span class="lastspan">购买攻略</span><br/>
+				<span class="lastspan">网址导航</span><br/>
+				
+			</div>
+
+
+
+			<div class="last">
+				<h2>关于</h2>
+				<br/>
+				<br/>
+				<span class="lastspan">关于我们</span><br/>
+				<span class="lastspan">加入我们</span><br/>
+				<span class="lastspan">使用条款</span><br/>
+				<span class="lastspan">隐私协议</span><br/>
+				
+			</div>
+
+
+			<div class="last" style="border-right: 2px solid dimgray;padding-right: 200px;margin-right: 100px;">
+				<h2>更多</h2>
+				<br/>
+				<br/>
+				<span class="lastspan">知识社区</span><br/>
+				
+			</div>
+
+
+			
+				<img src="img/logo-big.png" style="cursor: pointer;">
+				<br/>
+				<br/>
+				
+				<img src="img/last1.png">
+				<br/>
+
+				联系我们<br/>
+				<span>售前咨询：400-659-9879</span><br/>
+				<span>帮助支持：</span>
+				<span class="lastspan">support@modao.cc</span>
+				<br/>
+				<span>商务合作：</span>
+
+				<span class="lastspan">bd@modao.cc</span><br/>
+
+
+
+
+
+
+
+
+
+
+		<div class="e" style="position: absolute;">
+         	<span>
+         		© 2012-2021 墨刀 - 强大易用的原型设计与协同工具
+         		<br/>
+                   京ICP备14055711号-2
+         	</span>
+				
+			</div>
+
+
+		</div>
+
+     
+
+	</body>
+</html>
